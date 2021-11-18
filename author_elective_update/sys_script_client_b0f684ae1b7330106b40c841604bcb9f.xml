@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name/>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var von = 10000;
+    var moiThang = 0000;
+    var thang = 8 * 12;
+    var tiLe = 0.05;
+    var total = 0;
+    var loi = 0;
+
+    for (var i = 0; i < thang; i++) {
+        if (total === 0) {
+            total += von;
+        }
+        var loiThang = (total + moiThang) * tiLe;
+        console.log('lời tháng ' + i + ": " + Math.floor(loiThang));
+        total += (loiThang + moiThang);
+    }
+    loi = total - von - moiThang * thang;
+    alert('Tiền lời: ' + Math.floor(loi) + '\nTiền tổng: ' + Math.floor(total)+'\nTiền gốc: '+(total - loi));
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-16 04:28:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b0f684ae1b7330106b40c841604bcb9f</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_b0f684ae1b7330106b40c841604bcb9f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 08:36:14</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>16a5a4e9dbb72410f37acac5059619bb</instance_id>
+        <instance_name>dev112514</instance_name>
+        <name>sys_script_client_b0f684ae1b7330106b40c841604bcb9f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name/&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    var von = 10000;
+    var moiThang = 0000;
+    var thang = 8 * 12;
+    var tiLe = 0.05;
+    var total = 0;
+    var loi = 0;
+
+    for (var i = 0; i &lt; thang; i++) {
+        if (total === 0) {
+            total += von;
+        }
+        var loiThang = (total + moiThang) * tiLe;
+        console.log('lời tháng ' + i + ": " + Math.floor(loiThang));
+        total += (loiThang + moiThang);
+    }
+    loi = total - von - moiThang * thang;
+    alert('Tiền lời: ' + Math.floor(loi) + '\nTiền tổng: ' + Math.floor(total)+'\nTiền gốc: '+(total - loi));
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-16 04:28:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b0f684ae1b7330106b40c841604bcb9f&lt;/sys_id&gt;&lt;sys_mod_count&gt;43&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b0f684ae1b7330106b40c841604bcb9f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-17 08:36:14&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>613003432</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1e4b3b421b3330106b40c841604bcb5f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 08:36:14</sys_created_on>
+        <sys_id>7a9ac63e1b3730106b40c841604bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d2d0a13520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 08:36:14</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>729ac63ef6373010534ba82b1b31fc6a</update_guid>
+        <update_guid_history>729ac63ef6373010534ba82b1b31fc6a:613003432,a56a0aba233730105a29972cd4895a6d:-1763130899,007b25f2f9f330108a32da1e6b99ed21:575458357,e74ba53626f33010a435c8623ac2af77:1536567345,ded6157635b33010efafd45df185e017:1658273120,f74a8dfa58733010b4dd09d557bdfa7e:-836013247,731a457a5b733010ad6e0c809c2bc460:-1529618685,ce0a01facf7330106b4dba96ea79e078:-1666363614,a0590d7aec7330107c846f00a47f536a:-1886538048,c156c93afb733010f0db8651848f2101:305311148,5b36893af073301010fc11ed9973301f:-244106417,57f5853a7373301083fa22b47369ef14:1203122063,8ee5c13a437330103929cdcb4a0b654d:-380837427,abb5013a557330107b4c36dc6dfdad63:-1118858610,7095c5f66d733010f0d3a8195fac194a:1947262140,7bc485f699733010526d49c60eb8e74b:1203122063,6da3c5b6237330107dd8a0faeef0d4d0:-2010373043,384205766a7330104c81bece8f16a3b2:-1489125649,5ff10df24e733010c321e4b870be0512:-655025171,5bd10df2e5733010317fc5ab559f7d42:465100880,301009f26d7330102eb2759324bbbb90:1137602322,72cff4f2787330108379c10a66f564d3:1042952499,bbaff0b272733010b4f7ebfbcfda026d:1311077863,e06fbc72ab7330101e3d0eff22246b49:714133928,8f2eb0b2cf733010d4d9a6c85088d257:836445089,06cdb472a17330101f07e3e854a49838:1191005750,e64dfc325b733010e35f5867502ea37c:2058773240,362df07268733010d94877508668206c:98240875,761d30722c733010b1963d9ff10ac473:-316137233,58ecb8fe6b333010d0583877552ddc97:-789626496,77bc7cfeed33301078caa4823f4c7ee5:-722695263,da7b38fee63330100c29fa95969b86b0:331679752,e24bb8fe6d3330102892e5ef8003a58e:1306554592,eb1b70fe7b333010fb1e5eb2552e71b1:-1879544416,20da78bea633301009f50beafb811340:235318536,0eaabcba63333010f3944ab0af4da0a5:808387016,835af8beea333010d65ff4fd4d30d383:953721745,0e3af8be1c333010ac3225de9cacc726:-928271100,740abc7e0733301012448d6a37361c66:-68940052,9c99fc7e44333010b4e019540d70dd50:1675277951,c959bc7e5b3330104999b1be3deb9f5e:132727099,35cf44a2eab330107ff8b5422217c455:1925184465,2beb8462fdb330105a4992e2f05bb3e7:-2092590341,fb4884ee07733010a15238e451c1fd38:-1901224030</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 08:38:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>244b248915524edb8ea681752d517ab9</sys_id>
+        <sys_metadata>b0f684ae1b7330106b40c841604bcb9f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">920d37061b3330106b40c841604bcb76</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_b0f684ae1b7330106b40c841604bcb9f</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b0f684ae1b7330106b40c841604bcb9f">7a9ac63e1b3730106b40c841604bcb6a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 08:38:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
